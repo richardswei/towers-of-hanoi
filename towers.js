@@ -1,4 +1,4 @@
-function solveTowersOfHanoi(numberDiscs) { // takes an array of arrays that expresses the state of the towers (1 for smallest disc, )
+function solveTowersOfHanoi(numberDiscs) { // takes a number that expresses the first pegs number of discs
 	var smallDiscDirection = numberDiscs%2 ? 'left' : 'right';
 	var towerConfig = [Array.from(Array(numberDiscs), (e,i)=>i+1),[],[]];
 	doNextMove(towerConfig, 0, smallDiscDirection);
